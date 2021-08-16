@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="grid.js"></script>
+<title>Insert title here</title>
+</head>
+<style>
+table {
+    width: 100%;
+    border: 1px solid #444444;
+  }
+th, td {
+    border: 1px solid #444444;
+  }
+</style>
+<body>
+<div id="buttonArea" class="buttonArea">
+<button id="addBtn">추가</button> <button id="delBtn">삭제</button> 
+</div>
+<div id="rowArea" class="rowArea">
+<table id="dataArea">
+	<thead>
+		<tr>
+			<th><input type="checkbox" id="allSel" class="dataSelect" checked></th>
+			<th>상품명</th>
+			<th>갯수</th>
+			<th>총금액</th>
+		</tr>
+	</thead>
+	<tbody id="addArea">
+	</tbody>
+</table>
+</div>
+<button id="calBtn">총액 계산</button>
+<div>
+총금액 : <span id="totalPrice"></span>
+</div>
+</body>
+</html>
